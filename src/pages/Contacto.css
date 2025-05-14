@@ -1,108 +1,139 @@
-.contacto {
+.home {
     width: 100%;
     min-height: 100vh;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-}
-.contacto-contenido{
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 80%;
-  height: auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column;
-  z-index: 2;
-}
-.contacto-principal {
-  width: 100%;
-  min-height: 100vh;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column;
-}
-
-.contacto-titulo{
-    height: 20vh;
-    display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    background-color: #ffffff; 
 }
 
-.contacto-titulo-texto{
-    font-family: "Anton", sans-serif;
-    font-style: normal;
-    font-size: 80px;
-    font-weight: 700;
-    color: #eae0c8;
-    letter-spacing: 2px;
-    text-shadow: 4px 4px 1px #e9a642;
+.home-contenido {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 80%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    padding: 40px;
+    background-color: #4a0c0c; 
+}
+
+.home-principal {
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.home-titulo {
+    height: auto;
+    margin-bottom: 40px;
     text-align: center;
 }
-.contacto-principal > div {
-  width: 100%;
+
+.home-titulo-texto {
+    font-family: "Anton", sans-serif;
+    font-style: normal;
+    font-size: 64px;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 2px;
+    text-shadow: 4px 4px 1px #e9c46a;
 }
 
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 12px; 
-  margin-bottom: 24px; 
+.home-info {
+    width: 100%;
+    color: #ffffff; 
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    padding: 20px;
 }
 
-label {
-  font-weight: 600;
-  color: #eae0c8;
+.home-info h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #e9c46a; 
 }
 
-input,
-textarea {
-  width: 100%;
-  padding: 8px; 
-  border: 2px solid #eae0c8;
-  border-radius: 8px; 
-  font-size: 14px; 
-  font-family: inherit;
-  background-color: #fffef9;
-  color: #3e3b32;
+.home-info h3 {
+    font-size: 28px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: #e9c46a;
 }
 
-textarea {
-  resize: vertical;
-  height: 80px; 
+.home-info p {
+    font-size: 18px;
+    margin-bottom: 20px;
 }
 
-button {
-  padding: 8px;
-  font-weight: bold;
-  background-color: #e9a642;
-  border: none;
-  color: #fffef9;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+.home-info a {
+    color: #ffffff;
+    text-decoration: underline;
+    font-weight: bold;
+    transition: color 0.3s ease;
 }
 
-button:hover {
-  background-color: #a87e2d;
+.home-info a:hover {
+    color: #e9c46a; 
 }
 
-h2, h3, p {
-  color: #eae0c8;
-  font-size: 16px; 
+.home-noticias {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
 }
 
+.home-noticia {
+    background-color: #800000; 
+    border: 1px solid #e9c46a; 
+    border-radius: 10px;
+    padding: 16px 24px;
+    font-size: 18px;
+    color: #ffffff; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
 
-iframe {
-  border: 2px solid #eae0c8;
-  border-radius: 12px;
-  margin-top: 16px;
-  height: 150px; 
-  width: 100%;
+.home-noticia:hover {
+    transform: scale(1.02);
+    background-color: #4a0c0c; 
+}
+
+.home-accesos {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 16px;
+}
+
+.home-acceso {
+    background-color: #e9c46a; 
+    border: 1px solid #ffffff; 
+    border-radius: 10px;
+    padding: 12px 20px;
+    font-size: 18px;
+    color: #4a0c0c; 
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.home-acceso:hover {
+    background-color: #4a0c0c;
+    color: #ffffff; 
+    transform: scale(1.05);
 }

@@ -20,8 +20,8 @@ const Contacto = () => {
 
                         <h3>Información de contacto</h3>
                         <p>Teléfono: +57 301 000 0000</p>
-                        <p>Email: contacto@centroeducativo.edu.co</p>
-                        <p>Dirección: Calle 123 #45-67, Bogotá</p>
+                        <p>Email: contacto@express.com</p>
+                        <p>Dirección: Calle 12 #45-67, Medellin</p>
 
                         <h3>Ubicación</h3>
                         <iframe src="" width="100%" height="200"></iframe>

@@ -1,10 +1,11 @@
-import Acerca from "../pages/acerca"
-import Contactos from "../pages/contactos"
-import Home from "../pages/home"
-import Login from "../pages/login"
-import Servicios from "../pages/servicios"
+import Acerca from "../pages/acerca";
+import Contacto from "../pages/Contacto";
+import Home from "../pages/home";
+import Login from "../pages/login";
+import Servicios from "../pages/servicios";
 
-export let enrutador =[
+
+export let enrutador = [
     {
         path: '/',
         element: <Login/>
@@ -18,11 +19,12 @@ export let enrutador =[
         element: <Servicios/>
     },
     {
-        path: '/contactos',
-        element: <Contactos/>
+        path: '/contacto',
+        element: <Contacto/>
     },
     {
         path: '/acerca de',
         element: <Acerca/>
     }
+    
 ]
